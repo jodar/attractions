@@ -1,0 +1,13 @@
+<table class="tab_user">
+  <tr>
+    <th>Nome</th>
+    <th>Email</th>
+  </tr>
+
+<% @users.each do |user| %>
+  <tr class=<%=cycle('even', 'odd')%>>
+    <td class="user_nome"><%= user.name %></td>
+    <td class="user_email"><%= user.email %></td>
+  </tr>
+<% end %>
+</table>
